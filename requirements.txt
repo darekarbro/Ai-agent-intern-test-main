@@ -1,0 +1,14 @@
+# Core (always required)
+numpy>=1.26.0
+PyYAML>=6.0
+python-dotenv>=1.0.0
+sentence-transformers>=3.0.0
+
+# LLM provider clients -- only one is strictly required depending on your
+# .env LLM_PROVIDER, but both are lightweight so both are installed by default.
+openai>=1.30.0        # used for Groq, Gemini, Ollama, OpenRouter, DeepSeek, Qwen, NVIDIA NIM
+anthropic>=0.40.0      # used only if LLM_PROVIDER=anthropic
+
+# Optional interface
+fastapi>=0.110.0
+uvicorn>=0.29.0
